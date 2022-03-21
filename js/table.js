@@ -1,6 +1,7 @@
 const val = document.querySelector('.val');
 
 const tbody = document.createElement('tbody')
+tbody.classList.add('dyn');
         function courseNow(id){
             fetch(`https://www.nbrb.by/api/exrates/rates/${id}`)
             .then((response) => response.json())
@@ -17,4 +18,8 @@ const tbody = document.createElement('tbody')
         courseNow(451)
         courseNow(456)
         val.append(tbody)
+        table.setAttribute('tabliza')
+        let style = document.createElement('style');
+        style.innerText =`.tabliza`
+        table.append(style);
         

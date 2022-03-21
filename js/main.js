@@ -12,6 +12,16 @@ const dmChart = document.getElementById('curChart');
 const today = dayjs().format('YYYY-MM-DD');
 
 const worker = new Worker('/js/worker.js');
+addEventListener('message', ({data}) => {
+    mapp[data.msg](data)
+})
+
+const mapp = {
+    course: (data) => {
+        getCourse(data)
+    },
+}
+
 worker.addEventListener('message', ({data}) => {
       mapping[data.msg](data.payload);    
   });
@@ -22,7 +32,7 @@ worker.addEventListener('message', ({data}) => {
       cur: (payload) => {
         allValues = payload;
         createSelect(allValues);
-
+    
       }
   }
   
@@ -62,17 +72,19 @@ function period4btns(a, b) {
 }
 //--------------------------------------------------
 function deleteTable() {
-    const tr = document.querySelectorAll('td');
-    tr.forEach(el => el.remove('tr'))
+    const tr = document.querySelectorAll('.tabliza tr');
+    tr.forEach(el => el.remove('td'))
 }
 
 
 chooseVal.addEventListener('change', () => {
     deleteTable()
     getCur(allValues);
+    
   })
 
-
+function getUSD (x) {
+}
 
   
 function getCur(allValues) {

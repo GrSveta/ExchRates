@@ -8,15 +8,7 @@ fetch('https://www.nbrb.by/api/exrates/currencies')
     )
     .then(postMessage)
    
-    addEventListener('message', ({data}) => {
-        mapp[data.msg](data)
-    })
-    
-    const mapp = {
-        course: (data) => {
-            getCourse(data)
-        },
-    }
+   
     
     function getCourse(data){
         fetch(`https://www.nbrb.by/api/exrates/rates/$${data.data.id}?startdate=${data.data.startDate}&enddate=${data.data.endDate}`)

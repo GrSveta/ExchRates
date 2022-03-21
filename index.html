@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="val">
+        <img src="/img/Blocks-2s-110px.gif" alt="" class="image">
+        <h1> Current Exchange Rate</h1>       
+    </div>  
+    <div class='wrapper'>
+         
+        <div>
+            <select class="chooseVal"  value="">
+                <option  class="option">Choose</option>
+            </select>
+        </div>
+
+        <div class="btns">
+            <button class="btn1">Week</button>
+            <button class="btn2">Month</button>
+            <button class="btn3">Quarter</button>
+            <button class="btn4">Year</button>
+        </div>
+
+        <div class="period">
+            <p> <input class = 'fromDate' type="date"> 
+                <input class = 'toDate' type="date"></p>
+        </div>     
+
+    </div>
+
+    <div class="main">
+
+        
+
+    <div id="curChart"></div>
+
+    <div class="table">
+        <table>
+         <th></th>
+         <th></th>
+        </table>
+    </div>
+    </div>
+    <script src="/js/table.js"></script>  
+    <script src="/js/main.js"></script>
+    
+    
+</body>
+</html>

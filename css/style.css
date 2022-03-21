@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: url(/img/абстрактный-фон-валют-107577665.jpg);
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;;
+}
+h1 { margin: auto;
+    padding:0 25px 25px;
+    background-color:   rgb(135, 166, 216);
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    }
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.fromDate, .toDate {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.period {
+    margin-left: 10%;
+}
+
+select{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+/*----------*/
+.btns {
+    margin-left: 6%;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+.chooseVal {
+    margin-left: 17%;
+}
+
+input {
+    margin: 5px 20px;
+}
+
+select, button {
+    margin: 10px;
+}
+/*----------*/
+.val{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(135, 166, 216);
+      
+}
+
+p {
+    font-size: 30px;
+    font-weight: bolder; 
+}
+
+.image {
+    background-color: none;
+    height: 4%;
+    width: 4%;
+    background-color: rgb(135, 166, 216);
+}
+
+td {
+    
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}  
+.table {
+    margin: 10px;
+    
+    align-items: center;
+    overflow-y: auto;
+    height: 100vh;
+}
